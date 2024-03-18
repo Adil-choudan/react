@@ -1,13 +1,15 @@
-import React from 'react';
-import  ReactDOM  from 'react-dom/client';
 
-import Appcomp from './examtest/Appcomp';
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+// import Appcomp from './examtest/Appcomp';
+import App from './App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Appcomp />
+        <App />
     </React.StrictMode>
 );
-
