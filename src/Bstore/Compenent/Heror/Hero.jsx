@@ -1,8 +1,8 @@
 import React from 'react';
 import './Hero.css'
 import hand_icon from '../assest/hand_icon.png';
-import hero_right from '../assest/hero_right.png';
 import arrow_icon from '../assest/arrow_icon.png'
+import hero_image from '../Assets/hero_image.png'
 const Hero = () => {
     return (
         <div className='hero'>
@@ -10,11 +10,11 @@ const Hero = () => {
                 <h2>NEEW ARRIVALS ONLY</h2>
                 <div>
                     <div className="hero-hand-icon">
-                        <p>new</p>
+                        <p>Welcome</p>
                         <img src={hand_icon} alt="" />
                     </div>
-                    <p>collection</p>
-                    <p>for everyone</p>
+                    <p>The Latest</p>
+                    <p>Trends with Us</p>
                 </div>
                 <div className="hero-latest-btn">
                     <div>latest collection</div>
@@ -22,7 +22,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="hero-right">
-                <img src={hero_right} alt="" />
+                <img src={hero_image} alt="" />
 
             </div>
         </div>

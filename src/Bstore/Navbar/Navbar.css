@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     padding: 1px; 
-    box-shadow: 0 1px 5px -2px black;
+    box-shadow: 0 1px 5px -2px rgb(255, 0, 0);
     height: 70px;
 }
 .nav-logo{
@@ -17,9 +17,9 @@
     margin-bottom: 4px;
 }
 .nav-logo p{
-    color: rgb(245, 152, 13);
+    color: rgb(0, 0, 0);
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: cursive;
     font-weight: 700;
 }
 .nav-menu{
@@ -38,13 +38,14 @@
     justify-content: center;
     gap: 3px;
     cursor: pointer;
+    color: rgb(0, 0, 0);
 }
 .nav-menu hr{
     border: none;
     width: 80%;
     height: 3px;
     border-radius: 10px;
-    background: rgb(245, 152, 13);
+    background: rgb(0, 0, 0);
 }
 .nav-login-cart{
     display: flex;
@@ -58,7 +59,7 @@
     width: 100px;
     height: 40px;
     outline: none;
-    border: 1px solid rgb(245, 152, 13);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 100px;
     color: gray;
     font-size: 20px;
@@ -68,7 +69,7 @@
 
 }
 .nav-login-cart button:active{
-    background: rgba(250, 125, 22, 0.774);
+    background: rgba(255, 0, 0, 0.774);
 }
 .nav-cart-count{
     width: 22px;

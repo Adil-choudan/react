@@ -1,7 +1,8 @@
 .hero{
-    height: 90vh;
-    background: linear-gradient(180deg,rgba(109, 108, 108, 0.781),rgb(197, 195, 195) 80%);
+    height: 110vh;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
     display: flex;
+    background-image: url('../assest/1339852.png');
 }
 .hero-left{
     flex: 1;
@@ -13,7 +14,7 @@
     line-height: 1.1;
 }
 .hero-left h2{
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 26px;
     font-weight: 700;
     font-family: 'Lucida Sans', 'Lucida Sans Regular',
@@ -21,8 +22,8 @@
      Geneva, Verdana, sans-serif;
 }
 .hero-left p{
-    color: black;
-    font-size: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -43,15 +44,24 @@
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
-    background: rgb(250, 142, 18);
+    background: rgb(255, 0, 0);
     color: wheat;
     font-size: 22px;
     font-weight: 500;
 }
-.hero-right {
+/* .hero-right {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+.hero_image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 80%;
 }
 
 
