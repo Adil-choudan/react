@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './Bstore/Navbar/Navbar';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import {  Routes, Route, BrowserRouter } from 'react-router-dom';
 import Shop from './Bstore/Pages/Shop';
 import Cart from './Bstore/Pages/Cart';
 import Loginsingin from './Bstore/Pages/Loginsignin';
@@ -21,8 +21,8 @@ const App = () => {
                     <Route path='/men' element={<Shopcategory banner={men_banner} category="men"/>}/>
                     <Route path='/women' element={<Shopcategory banner={women_banner} category="women"/>}/>
                     <Route path='/kids' element={<Shopcategory banner={kid_banner} category="kid"/>}/>
-                    <Route path='/proudact' element={<Product/>}>
-                        <Route path=':proudactId' element={<Product/>}/>
+                    <Route path='/product' element={<Product/>}>
+                         <Route path=':productId' element={<Product/>}/>
                     </Route>
                     <Route path='/cart' element={<Cart/>}/>
                     <Route path='/login' element={<Loginsingin/>}/>
