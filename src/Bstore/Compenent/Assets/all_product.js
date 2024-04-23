@@ -222,7 +222,7 @@ let all_product = [
   },
   {
     id: 24,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Homme Serge Pariente Blouson Hipster Noir | Blouson",
     category: "men",
     image: p24_img,
     new_price: 85.0,
