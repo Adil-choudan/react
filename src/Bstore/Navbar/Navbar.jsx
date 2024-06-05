@@ -1,14 +1,15 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import './Navbar.css';
 import logoone from '../Traches/logo/logoone.png'
 import { Link } from 'react-router-dom';
 import cart_icon from '../Compenent/Assets/cart_icon.png'
 import { ShopContext } from '../Context/ShopContext';
+import dropdown from '../Compenent/Assets/dropdown.png';
 
 
 
 const Navbar = () => {
-
+    
     const [color, setColor] = useState(false)
     const changeColor = () => {
         if (window.scrollY >= 70) {
@@ -21,6 +22,12 @@ const Navbar = () => {
 
     const [menu,setMenu] = useState("Shop");
     const {getTotalCartItems} = useContext(ShopContext);
+    const menuRef = useRef();
+
+    const dropdown_toggle = (e) =>{
+        menuRef.current.classList.toggle('nav-menu-visible');
+        e.target.classList.toggle('open');
+    }
 
 
     return (
@@ -30,7 +37,8 @@ const Navbar = () => {
                 <img src={logoone} alt="" />
                 <p>Shouart</p>
             </div>
-            <ul className="nav-menu">
+            <img className='nav-dropdown' onClick={dropdown_toggle} src={dropdown} alt="" />
+            <ul ref={menuRef} className="nav-menu">
                 <li onClick={()=>{setMenu("Shop")}}><Link style={{textDecoration: 'none', color: 'black'}} to='/'>Shop</Link>{menu==="Shop"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("mens")}}><Link style={{textDecoration: 'none', color: 'black'}} to='/men'>Men</Link>{menu==="mens"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("Womens")}}><Link style={{textDecoration: 'none', color: 'black'}} to='/women'>Women</Link>{menu==="Womens"?<hr/>:<></>}</li>
